@@ -1,0 +1,75 @@
+
+ 
+<html>
+    <head>
+      <title>Emotion To Emoji</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Do+Hyeon&family=Grenze+Gotisch:wght@900&family=Hanalei&family=Merienda+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body style="font-family: 'Lobster', cursive;">
+    <div class="container">
+    
+      <center>
+  <h3 class="btn btn-warning" style="font-family: 'Permanent Marker', cursive; font-size: 30px;  text-decoration: underline;">Emotion To Emoji
+  <br>
+  <span>&#128076;</span>
+  <span>&#128077;</span>
+  <span>&#128079;</span>
+  <span>&#128400;</span>
+  <span>&#129304;</span>
+  <span>&#9996;</span>
+  <span>&#128075;</span>
+  </h3>
+        <br><br>
+  
+        <p style="font-size: 22px; font-family: 'Merienda One', cursive;">Take a selfie of a emoji to know about it's meaning
+        </p>
+        <p style="font-size: 22px; font-family: 'Merienda One', cursive;">On the above emoji the model is trained -</p>>
+  
+        <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: chartreuse;">
+  <label style="font-family: 'Concert One', cursive; font-size: 22px;">Webcam view-</label>
+  <div id="camera"></div>
+  <br>
+  <button class="btn btn-info" onclick="take_snapshot()" style="font-family:'Do Hyeon', sans-serif; font-size: 22px;">Capture Image</button>
+  <br>      <br>
+  </div>
+  
+  <div class="col-md-4 col-sm-12 col-xs-12">
+    <kbd style="font-family: 'Grenze Gotisch', cursive; font-size: 22px; background-color: green; border-radius: 20px;"> Prediction 1-</kbd>
+    <p class="emotion_name" style="color: white;" id="result_emotion_name"></p>
+    <p class="emoji" style="color: white;" id="update_emoji"></p>
+  
+    <kbd style="font-family: 'Grenze Gotisch', cursive; font-size: 22px; background-color: green; border-radius: 20px;"> Prediction 2-</kbd>
+    <p class="emotion_name" style="color: white;" id="result_emotion_name2"></p>
+    <p class="emoji" style="color: white;" id="update_emoji2"></p>
+  </div>
+  
+  <div class="col-md-4 col-sm-12 col-xs-12" style="background-color: powderblue;">
+  <label style="font-family: 'Concert One', cursive; font-size: 22px;">Snapshot-</label>
+  <div id="result"></div>
+  <br>
+  <button class="btn btn-info" onclick="check()" style="font-family:'Do Hyeon', sans-serif; font-size: 22px;">Predict Hand Gesture</button>
+  <br><br>
+  </div>
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    <script async src="https://drv.tw/inc/wd.js"></script></body>
+  </html>
+  
+   

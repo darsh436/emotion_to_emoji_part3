@@ -1,0 +1,28 @@
+body
+{
+  color: white;
+  background-size: 100%;
+  background-image: url("https://previews.123rf.com/images/peshkov/peshkov1904/peshkov190400348/120869748-creative-ai-background-with-forex-chart-artificial-intelligence-and-invest-concept-3d-rendering.jpg");
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
